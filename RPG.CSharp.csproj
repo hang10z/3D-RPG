@@ -81,8 +81,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character Classes\BaseCharacterClass.cs" />
+    <Compile Include="Assets\Scripts\Character Classes\BaseHitManClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseMageClass.cs" />
+    <Compile Include="Assets\Scripts\Character Classes\BaseMedicClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseWarriorClass.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseArmor.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseStatItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseWeapon.cs" />
+    <Compile Include="Assets\Scripts\TestGui.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

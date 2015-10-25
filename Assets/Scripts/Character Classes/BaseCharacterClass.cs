@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Character_Classes
+﻿using UnityEngine;
+
+namespace Assets.Scripts.Character_Classes
 {
     public class BaseCharacterClass
     {
@@ -7,10 +9,18 @@
         private string characterClassDescription;
 
         //Stats
-        private int dexterity;
-        private int endurance;
-        private int strength;
-        private int intellect;
+        private int dexterity;  //  Hit % / accuracy
+        private int endurance;  //  Physical atk Resistance
+        private int spirit;     //  Magic atk Resistance
+        private int strength;   //  Melee atk Modifier
+        private int intellect;  //  Magic atk Modifier
+        private int vitality;   //  Health per lvl Modifier
+        private int mana;       //  Magic per lvl Modifier
+        private int evasion;    //  Physical Dodge
+        private int speed;      //  Rate of turn
+        private int hp;         //  HP
+        private int mp;         //  MP
+
 
         //Getter and Setters
         public string CharacterClassName
@@ -36,6 +46,12 @@
             set { endurance = value; }
         }
 
+        public int Spirit
+        {
+            get { return spirit; }
+            set { spirit = value; }
+        }
+
         public int Strength
         {
             get { return strength; }
@@ -46,6 +62,42 @@
         {
             get { return intellect; }
             set { intellect = value; }
+        }
+
+        public int Vitality
+        {
+            get { return vitality; }
+            set { vitality = value; }
+        }
+
+        public int Mana
+        {
+            get { return mana; }
+            set { mana = value; }
+        }
+
+        public int Evasion
+        {
+            get { return evasion; }
+            set { evasion = value; }
+        }
+
+        public int Speed
+        {
+            get { return speed; }
+            set { speed = value; }
+        }
+
+        public int Hp
+        {
+            get { return hp; }
+            set { hp = value; }
+        }
+
+        public int Mp
+        {
+            get { return mp; }
+            set { mp = value; }
         }
     }
 }
