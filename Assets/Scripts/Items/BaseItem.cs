@@ -10,6 +10,7 @@ public class BaseItem
 
     public enum ItemTypes
     {
+        //TODO: BaseItem: NEED TO FINISH ALL ITEM TYPES
         ARMOR,
         WEAPON,
         SCROLL,

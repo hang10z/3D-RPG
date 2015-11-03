@@ -5,6 +5,7 @@ public class BaseWeapon : BaseStatItem {    //BaseWeapon <-BaseStatItem <- BaseI
 
     public enum WeaponTypes
     {
+        NOT_SET,
         SWORD,
         KNUCKLE,
         STAFF,

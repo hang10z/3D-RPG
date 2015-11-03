@@ -6,6 +6,7 @@ public class BaseArmor : BaseStatItem      //BaseArmor <-BaseStatItem <- BaseIte
 
     public enum ArmorTypes
     {
+        NO_SET,
         HEAD,
         CHEST,
         SHOULDER,

@@ -14,8 +14,8 @@ namespace Assets.Scripts.Character_Classes
         private int spirit;     //  Magic atk Resistance
         private int strength;   //  Melee atk Modifier
         private int intellect;  //  Magic atk Modifier
-        private int vitality;   //  Health per lvl Modifier
-        private int mana;       //  Magic per lvl Modifier
+        private int luck;   //  Health per lvl Modifier
+        private int charm;       //  Magic per lvl Modifier
         private int evasion;    //  Physical Dodge
         private int speed;      //  Rate of turn
         private int hp;         //  HP
@@ -64,16 +64,16 @@ namespace Assets.Scripts.Character_Classes
             set { intellect = value; }
         }
 
-        public int Vitality
+        public int Luck
         {
-            get { return vitality; }
-            set { vitality = value; }
+            get { return luck; }
+            set { luck = value; }
         }
 
-        public int Mana
+        public int Charm
         {
-            get { return mana; }
-            set { mana = value; }
+            get { return charm; }
+            set { charm = value; }
         }
 
         public int Evasion
