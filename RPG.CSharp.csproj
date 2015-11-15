@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -72,6 +66,12 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
+    <Reference Include="ORKFramework">
+      <HintPath>Assets\ORK Framework\DLL\ORKFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ORKFrameworkCore">
+      <HintPath>Assets\ORK Framework\DLL\ORKFrameworkCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="RPG.CSharp.Plugins.csproj">
@@ -80,19 +80,56 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Base Player\BasePlayer.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseCharacterClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseHitManClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseMageClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseMedicClass.cs" />
     <Compile Include="Assets\Scripts\Character Classes\BaseWarriorClass.cs" />
+    <Compile Include="Assets\Scripts\Create Player\CreateNewCharacter.cs" />
+    <Compile Include="Assets\Scripts\GameInformation\GameInformation.cs" />
+    <Compile Include="Assets\Scripts\IncreaseExperience.cs" />
     <Compile Include="Assets\Scripts\Items\BaseArmor.cs" />
     <Compile Include="Assets\Scripts\Items\BaseItem.cs" />
+    <Compile Include="Assets\Scripts\Items\BasePotion.cs" />
+    <Compile Include="Assets\Scripts\Items\BaseScroll.cs" />
     <Compile Include="Assets\Scripts\Items\BaseStatItem.cs" />
     <Compile Include="Assets\Scripts\Items\BaseWeapon.cs" />
+    <Compile Include="Assets\Scripts\Items\CreateNewArmor.cs" />
+    <Compile Include="Assets\Scripts\Items\CreateNewPotion.cs" />
+    <Compile Include="Assets\Scripts\Items\CreateNewScroll.cs" />
+    <Compile Include="Assets\Scripts\Items\CreateNewWeapon.cs" />
+    <Compile Include="Assets\Scripts\LevelUp.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement\PlayerController1.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\LoadInformation.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\PPSerialization.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\SaveInformation.cs" />
+    <Compile Include="Assets\Scripts\SavingAndLoading\TestLoadScript.cs" />
     <Compile Include="Assets\Scripts\TestGui.cs" />
+    <Compile Include="Assets\Scripts\Turn Based Combat\TurnBasedCombatStateMachine.cs" />
+    <Compile Include="Assets\Scripts\_GUI_Scripts\CreateAPlayerGUI.cs" />
+    <Compile Include="Assets\Scripts\_GUI_Scripts\DisplayCreatePlayerFunctions.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\ISEquipmentSlot.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\ISObject.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\ISObjectDatabase.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\ISQuality.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\ISQualityDatabase.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISDesctructable.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISEquipable.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISEquipmentSlot.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISGameObject.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISObject.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISQuality.cs" />
+    <Compile Include="Assets\_BurgZerg Arcade\Item System\Scripts\Interfaces\IISStackable.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\ORK Framework\README.txt" />
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />

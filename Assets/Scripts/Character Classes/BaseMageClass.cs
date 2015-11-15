@@ -11,8 +11,16 @@
             Endurance = 10;
             Intellect = 25;
             Strength = 5;
+            Spirit = 15;
+            Luck = 5;
+            Charm = 5;
+            Evasion = 10;
+            Speed = 10;
+            Hp = 100;
+            Mp = 100;
+            Gold = 100;
 
-        }
+            }
 	
     }
 }

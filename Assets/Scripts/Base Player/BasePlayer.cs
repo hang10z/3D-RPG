@@ -11,17 +11,21 @@ public class BasePlayer
     private BaseCharacterClass playerClass;
 
     //STATS
-    private int dexterity;  //  Hit % / accuracy
+    private int dexterity;  //  Hit % / accuracy / crit
     private int endurance;  //  Physical atk Resistance
     private int spirit;     //  Magic atk Resistance
     private int strength;   //  Melee atk Modifier
     private int intellect;  //  Magic atk Modifier
-    private int luck;   //  Health per lvl Modifier
-    private int charm;       //  Magic per lvl Modifier
+    private int luck;       //  Health per lvl Modifier
+    private int charm;      //  Magic per lvl Modifier
     private int evasion;    //  Physical Dodge
     private int speed;      //  Rate of turn
     private int hp;         //  HP
     private int mp;         //  MP
+
+    private int gold;       // currency
+    private int currentXP;  // Current XP Value
+    private int requiredXP; // Level Requirement XP Value
 
 
     public string PlayerName
@@ -106,5 +110,23 @@ public class BasePlayer
     {
         get { return mp; }
         set { mp = value; }
+    }
+
+    public int CurrentXp
+    {
+        get { return currentXP; }
+        set { currentXP = value; }
+    }
+
+    public int RequiredXp
+    {
+        get { return requiredXP; }
+        set { requiredXP = value; }
+    }
+
+    public int Gold
+    {
+        get { return gold; }
+        set { gold = value; }
     }
 }

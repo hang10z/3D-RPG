@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class TurnBasedCombatStateMachine : MonoBehaviour
-    {
+{
 
+
+    private bool hasAddedXp = false;
     //TODO:Expand the BattleStates, Like Animations and Such
     public enum BattleStates
         {
@@ -22,6 +24,7 @@ public class TurnBasedCombatStateMachine : MonoBehaviour
     void Start()
         {
         currentState = BattleStates.START;
+        hasAddedXp = false;
 
         }
 
@@ -61,7 +64,13 @@ public class TurnBasedCombatStateMachine : MonoBehaviour
                 break;
 
             case (BattleStates.WIN):
-
+                    if (hasAddedXp == false)
+                    {
+                    //Calls the Increase Experience Script to add Experience
+                    IncreaseExperience.AddExperience();
+                        hasAddedXp = true;
+                    }
+                
                 break;
             }
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoadInformation : MonoBehaviour {
+public class LoadInformation {
 
     public static void LoadAllInformation()
     {
@@ -19,8 +19,14 @@ public class LoadInformation : MonoBehaviour {
         GameInformation.Spirit = PlayerPrefs.GetInt("SPIRIT");
         GameInformation.Luck = PlayerPrefs.GetInt("LUCK");
         GameInformation.Speed = PlayerPrefs.GetInt("SPEED");
-        GameInformation.HP = PlayerPrefs.GetInt("HP");
-        GameInformation.MP = PlayerPrefs.GetInt("MP");
+        GameInformation.Hp = PlayerPrefs.GetInt("HP");
+        GameInformation.Mp = PlayerPrefs.GetInt("MP");
+        GameInformation.gold = PlayerPrefs.GetInt("GOLD");
+
+        if (PlayerPrefs.GetString("ARMORPIECEHEAD") != null)
+        {
+            GameInformation.ArmorPieceHead = (BaseArmor)PPSerialization.Load("ARMORPIECEHEAD");
+        }
 
         //Debug
         Debug.Log("DEBUG:   LOADED PLAYER INFORMATION");

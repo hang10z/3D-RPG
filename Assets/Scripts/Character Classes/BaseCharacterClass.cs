@@ -20,6 +20,7 @@ namespace Assets.Scripts.Character_Classes
         private int speed;      //  Rate of turn
         private int hp;         //  HP
         private int mp;         //  MP
+        private int gold;       // Gold
 
 
         //Getter and Setters
@@ -98,6 +99,12 @@ namespace Assets.Scripts.Character_Classes
         {
             get { return mp; }
             set { mp = value; }
+        }
+
+        public int Gold
+        {
+            get { return gold; }
+            set { gold = value; }
         }
     }
 }
